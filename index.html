@@ -39,7 +39,7 @@
       </div>
     </nav>
     <section id="profile">
-      <div class="section_pic-container">
+      <div class="section__pic-container">
         <img
           src="./assets/profile-pic.png"
           alt="Graciela Salgado profile picture"
@@ -49,18 +49,26 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Graciela Salgado</h1>
         <p class="section__text__p2">Photographer and Student</p>
-      </div>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2"
-          onclick="window.open('./assets/Resume 2025.pdf')"
-        >
-          Download Resume
-        </button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume 2025.pdf')"
+          >
+            Download Resume
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/Linkedin.png" alt="My LinkedIn Profile"
+            class="icon" onclick="location.href='https://www.linkedin.com/in/graciela-salgado-094ba0335/'">
+          <img src="./assets/GitHubLogo.png" alt="My GitHub Profile"
+            class="icon" onclick="location.href='https://github.com/GraeciLu/'">
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
