@@ -61,7 +61,7 @@ a:hover {
   font-size: 2rem;
 }
 
-.logo.hover {
+.logo:hover {
   cursor: default;
 }
 
@@ -180,30 +180,22 @@ section {
     text-align: center;
 }
 
-.section__text__p1 {
+.section__text__p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
-}
-
-.title {
-    font-size: 3rem;
-    text-align: center;
 }
 
 .btn-container {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
-    /* Stack buttons vertically on small screens if desired: */
-    /* flex-direction: column; */
 }
 
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 0.5rem 1.5rem; /* Less vertical padding */
-    width: auto;            /* Let width fit content */
+    padding: 1rem; 
+    width: 8rem;  
     border-radius: 2rem;
 }
 
@@ -217,7 +209,11 @@ section {
     cursor: pointer;
 }
 
-.btn-color-1:hover, 
+.btn-color-1 {
+    background: rgb(53,53,53);
+    color: white;
+}
+
 .btn-color-2:hover {
     background: rgb(53,53,53);
     color: white;
@@ -235,6 +231,11 @@ section {
     border: rgb(255,255,255) 0.1rem solid;
 }
 
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
 #socials-container {
     display: flex;
     justify-content: center;
@@ -247,7 +248,55 @@ section {
     height: 2rem;
 }
 
-/* Optional: Add spacing between buttons and icons */
-.btn-container + #socials-container {
-    margin-top: 1rem;
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
